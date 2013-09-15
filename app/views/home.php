@@ -1,3 +1,7 @@
 <h1>Probando Laravel</h1>
 
-<p><?php echo $nombre; ?></p>
+<ul>
+    <?php foreach ($personas as $persona) { ?>
+        <li><?php echo $persona->nombre; ?>, <?php echo $persona->email; ?></li>
+    <?php } ?>
+</ul>

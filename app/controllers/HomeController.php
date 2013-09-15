@@ -10,6 +10,8 @@ class HomeController extends BaseController {
 
         $view->nombre = "Ariel Orozco Rivera";
 
+        $view->personas = Persona::all();
+
         $this->layout->title = 'Probando Laravel';
         $this->layout->content = $view;
 
